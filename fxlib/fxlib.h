@@ -1,3 +1,4 @@
+#include "fxlib/pebblewatch.h"
 #include "fxlib/typedefs.h"
 #include "fxlib/macros.h"
 #include "fxlib/ref.h"

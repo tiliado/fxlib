@@ -15,6 +15,8 @@ Features
   * [fxlib/ext_ref.h](fxlib/ext_ref.h): Reference counting for
     external objects.
   * [fxlib/ht.h](fxlib/ht.h): Primitive hash table implementation.
+  * [fxlib/strbuf.h](fxlib/strbuf.h): String buffer - build a string per partes.
+  * [fxlib/strfmt.h](fxlib/strfmt.h): String formatting with double value support.
   
 Dependencies
 ------------
@@ -29,6 +31,13 @@ Documentation
   * Incomplete!
   * Some functions are documented in header files.
 
+Build
+-----
+
+  * Run `make pebble-build` to build Pebble package.
+  * Run `make pebble-install` to show a hint how to install the package.
+  * Run `make pebble-clean` to clean build directory.
+  
 Contributing
 ------------
 

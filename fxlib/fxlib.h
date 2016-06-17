@@ -5,3 +5,4 @@
 #include "fxlib/ht.h"
 #include "fxlib/ext_ref.h"
 #include "fxlib/strbuf.h"
+#include "fxlib/strfmt.h"

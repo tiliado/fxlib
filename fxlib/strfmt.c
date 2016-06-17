@@ -33,6 +33,7 @@ char* fxstrfmtva(char* format, va_list args)
 	uint u_value;
 	char* s_value;
 	double g_value;
+	char c_value;
 	char ctrch;
 	// %[flags][width][.precision][length]specifier
 	int fmt_width; // parsed but ignored
@@ -111,6 +112,10 @@ char* fxstrfmtva(char* format, va_list args)
 			g_value = va_arg(args, double);
 			fxstrbuf_append_double(buf, g_value, fmt_dot && fmt_precision >= 0 ? fmt_precision : 6);
 		break;
+		case 'c':
+			c_value = (char) va_arg(args, int);
+			fxstrbuf_append_c(buf, c_value);
+			break;
 		case '%':
 			fxstrbuf_append_c(buf, '%');
 			break;

@@ -111,6 +111,9 @@ char* fxstrfmtva(char* format, va_list args)
 			g_value = va_arg(args, double);
 			fxstrbuf_append_double(buf, g_value, fmt_dot && fmt_precision >= 0 ? fmt_precision : 6);
 		break;
+		case '%':
+			fxstrbuf_append_c(buf, '%');
+			break;
 		case 'b':
 			i_value = va_arg(args, int);
 			fxstrbuf_append_bool(buf, i_value);

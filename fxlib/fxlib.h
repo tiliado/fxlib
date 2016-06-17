@@ -4,3 +4,4 @@
 #include "fxlib/ref.h"
 #include "fxlib/ht.h"
 #include "fxlib/ext_ref.h"
+#include "fxlib/strbuf.h"

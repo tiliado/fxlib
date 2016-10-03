@@ -6,3 +6,4 @@
 #include "fxlib/ext_ref.h"
 #include "fxlib/strbuf.h"
 #include "fxlib/strfmt.h"
+#include "fxlib/strfuncs.h"

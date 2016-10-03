@@ -4,6 +4,7 @@
 #include "fxlib/strbuf.h"
 #include "fxlib/strfmt.h"
 
+#ifndef FXLIB_PEBBLE
 void fxprintf(char* format, ...)
 {
 	va_list args;
@@ -14,6 +15,7 @@ void fxprintf(char* format, ...)
 	free(result);
 	va_end(args);
 }
+#endif
 
 char* fxstrfmt(char* format, ...)
 {

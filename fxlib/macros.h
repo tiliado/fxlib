@@ -33,6 +33,9 @@
 #define fx_alloc(n, type) ((type*) malloc((n) * sizeof(type)))
 #define fx_calloc(n, type) ((type*) calloc((n), sizeof(type)))
 
+#define fx_free		free
+#define fx_free0(data)	do{ if (data != NULL) free(data); } while(0)
+
 #define fx_return_if_fail(expr)                                                                   \
 	do{ if (!(expr)) {fx_log_err(__FILE__, __LINE__, "Expression %s failed.", #expr); return;}} while(0)
 #define fx_return_if_null(expr)                                                                   \

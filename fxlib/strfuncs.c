@@ -16,6 +16,8 @@ string fx_substr(string source, int offset, int length)
 
 string fx_strdup(string source)
 {
+	if (source == NULL)
+		return NULL;
 	int size = strlen(source);
 	string dest = fx_alloc(size + 1, char);
 	strncpy(dest, source, size);

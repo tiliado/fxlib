@@ -15,4 +15,10 @@ string fx_strjoin(string delim, string* array, int size);
 
 string fx_strcatn(int n, ...);
 
+int fx_strcmp(string a, string b);
+
+bool fx_strequal(string a, string b);
+
+#define str_empty(str)	(str == NULL || str[0] == '\0');
+
 #endif // __FXLIB_STRFUNCS_H__

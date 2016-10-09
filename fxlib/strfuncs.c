@@ -79,3 +79,23 @@ string fx_strcatn(int n, ...)
 	va_end(va);
 	return result;
 }
+
+int fx_strcmp(string a, string b)
+{
+	if (a == NULL && b == NULL)
+		return 0;
+	if (a == NULL)
+		return -1;
+	if (b == NULL)
+		return 1;
+	return strcmp(a, b);
+}
+
+bool fx_strequal(string a, string b)
+{
+	if (a == NULL && b == NULL)
+		return true;
+	if (a == NULL || b == NULL)
+		return false;
+	return strcmp(a, b) == 0;
+}

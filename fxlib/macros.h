@@ -35,6 +35,7 @@
 
 #define fx_free		free
 #define fx_free0(data)	do{ if (data != NULL) free(data); } while(0)
+#define fx_free0_null(data)	do {if (data != NULL){free(data); data = NULL;}} while(0)
 
 #define fx_return_if_fail(expr)                                                                   \
 	do{ if (!(expr)) {fx_log_err(__FILE__, __LINE__, "Expression %s failed.", #expr); return;}} while(0)
